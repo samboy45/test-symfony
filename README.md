@@ -56,8 +56,12 @@ Le message ci-dessus contient les informations suivantes :
 **RPPS :** 99700067210  
 
 ## Exercice
+Parser les données HL7 et les insérer en base:
+
 * Forkez ce repo GIT sur votre Gitlab/Github
-* Parser les fichiers HL7 à l’aide de PHP/Symfony et insérer les entités générées en base de données.
+* Créez les entités nécessaires au projet
+* Parser les fichiers HL7 présent dans `web/files/` à l’aide de PHP/Symfony
+* Insérer les entités générées en base de données.
 
 ## Important
 * Faire une interface web est un plus mais c'est FACULTATIF, plus vous livrez vite et bien, mieux c'est !
