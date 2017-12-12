@@ -58,14 +58,14 @@ Le message ci-dessus contient les informations suivantes :
 ## Exercice
 Parser les données HL7 et les insérer en base:
 
-* Forkez ce repo GIT sur votre Gitlab/Github
-* Créez les entités nécessaires au projet
+* Forker ce repo GIT sur votre Gitlab/Github
+* Créer les entités nécessaires au projet
 * Parser les fichiers HL7 présent dans `web/files/` à l’aide de PHP/Symfony
 * Insérer les entités générées en base de données.
 
 ## Important
 * Faire une interface web est un plus mais c'est FACULTATIF, plus vous livrez vite et bien, mieux c'est !
-* Soignez votre code
+* Soigner votre code
 * Modifier ce readme dans votre repo pour expliquer votre projet.
-* Envoyez le lien github/gitlab de votre projet afin que l'on puisse regarder votre code.
+* Envoyer le lien github/gitlab de votre projet afin que l'on puisse regarder votre code.
 
