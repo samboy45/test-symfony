@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "dbdcd2fbd1755a028fdca338d757033b",
+    "content-hash": "bee714b03e64ba1015b0dcc239c8712f",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -985,6 +985,47 @@
                 "random"
             ],
             "time": "2017-09-27T21:40:39+00:00"
+        },
+        {
+            "name": "pharmaintelligence/hl7",
+            "version": "v0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Pharma-Intelligence/HL7.git",
+                "reference": "7a1bd6c1f0781abde4ccf8c19a2d8f5aba5e3097"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Pharma-Intelligence/HL7/zipball/7a1bd6c1f0781abde4ccf8c19a2d8f5aba5e3097",
+                "reference": "7a1bd6c1f0781abde4ccf8c19a2d8f5aba5e3097",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "./src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Robert van der Linde",
+                    "homepage": "http://pharma-intelligence.nl",
+                    "role": "Developer"
+                }
+            ],
+            "description": "HL7 PHP Library.",
+            "homepage": "https://github.com/linde002/HL7/",
+            "keywords": [
+                "hl7"
+            ],
+            "time": "2015-01-16T15:35:29+00:00"
         },
         {
             "name": "psr/log",
@@ -2225,8 +2266,5 @@
     "platform": {
         "php": ">=5.3.9"
     },
-    "platform-dev": [],
-    "platform-overrides": {
-        "php": "5.3.9"
-    }
+    "platform-dev": []
 }
