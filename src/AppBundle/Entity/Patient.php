@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Patient
  *
- * @ORM\Table(name="patient", indexes={@ORM\Index(name="FK_Patient_id_Medecin", columns={"id_Medecin"})})
+ * @ORM\Table(name="patient")
  * @ORM\Entity
  */
 class Patient
@@ -38,7 +38,7 @@ class Patient
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="date_naissance", type="date", nullable=true)
+     * @ORM\Column(name="date_naissance", type="string", length=255, nullable=true)
      */
     private $dateNaissance;
 
@@ -71,14 +71,9 @@ class Patient
     private $ville;
 
     /**
-     * @var \Medecin
-     *
-     * @ORM\ManyToOne(targetEntity="Medecin")
-     * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="id_Medecin", referencedColumnName="id")
-     * })
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Medecin", inversedBy="patients")
      */
-    private $idMedecin;
+    private $medecin;
 
 
 
@@ -253,26 +248,28 @@ class Patient
         return $this->ville;
     }
 
+
+
     /**
-     * Set idMedecin
+     * Set medecin
      *
-     * @param \AppBundle\Entity\Medecin $idMedecin
+     * @param \AppBundle\Entity\Medecin $medecin
      * @return Patient
      */
-    public function setIdMedecin(\AppBundle\Entity\Medecin $idMedecin = null)
+    public function setMedecin(\AppBundle\Entity\Medecin $medecin = null)
     {
-        $this->idMedecin = $idMedecin;
+        $this->medecin = $medecin;
 
         return $this;
     }
 
     /**
-     * Get idMedecin
+     * Get medecin
      *
      * @return \AppBundle\Entity\Medecin 
      */
-    public function getIdMedecin()
+    public function getMedecin()
     {
-        return $this->idMedecin;
+        return $this->medecin;
     }
 }

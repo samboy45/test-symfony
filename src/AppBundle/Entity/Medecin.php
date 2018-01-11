@@ -43,6 +43,10 @@ class Medecin
     private $rpps;
 
 
+    /**
+     * @ORM\OneToMany(targetEntity="AppBundle\Entity\Patient", mappedBy="medecin")
+     */
+    private $patients;
 
     /**
      * Get id
@@ -121,5 +125,45 @@ class Medecin
     public function getRpps()
     {
         return $this->rpps;
+    }
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->patients = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+    /**
+     * Add patients
+     *
+     * @param \AppBundle\Entity\Medecin $patients
+     * @return Medecin
+     */
+    public function addPatient(\AppBundle\Entity\Medecin $patients)
+    {
+        $this->patients[] = $patients;
+
+        return $this;
+    }
+
+    /**
+     * Remove patients
+     *
+     * @param \AppBundle\Entity\Medecin $patients
+     */
+    public function removePatient(\AppBundle\Entity\Medecin $patients)
+    {
+        $this->patients->removeElement($patients);
+    }
+
+    /**
+     * Get patients
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getPatients()
+    {
+        return $this->patients;
     }
 }
