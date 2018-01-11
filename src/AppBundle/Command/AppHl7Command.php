@@ -66,8 +66,9 @@ class AppHl7Command extends ContainerAwareCommand
             $medecin->setRpps($rppsMedcecin);
             $patient->setMedecin($medecin);
 
-            $em->persist($patient);
             $em->persist($medecin);
+            $em->persist($patient);
+
 
 
         }
