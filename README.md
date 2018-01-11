@@ -33,13 +33,13 @@ Chaque segment commence par une chaîne de 3 caractères identifiant le type du 
 ---
     
 ## Installation de l'application
-1.Creer la base de donnée test-symfony
-2. ouvrir le projet dans un ide ou acceder au repertoire depuis la console
-3. Faire un Composer install
-    1. l'adresse du serveur (127.0.0.1 par defaut)
-    2. le nom de la base mettre "test-symfony" (symfony par defaut)
-    3. le login de la connexion à la base (root par defaut)
-    4. le mot de passe de la base (null par défaut)
+-   Creer la base de donnée test-symfony
+-   ouvrir le projet dans un ide ou acceder au repertoire depuis la console
+- Faire un Composer install
+    - l'adresse du serveur (127.0.0.1 par defaut)
+    - le nom de la base mettre "test-symfony" (symfony par defaut)
+    - le login de la connexion à la base (root par defaut)
+    - le mot de passe de la base (null par défaut)
     
 pour parser les messages hl7 contenus dans les fichiers .txt (situés dans le repertoire web/files), placer vous dans la console et
  lancé la commande : php app/console app:hl7. Les fichiers seront parsés, en recupérants les informations patients et medecin pour être ensuite enregistrer en base.
